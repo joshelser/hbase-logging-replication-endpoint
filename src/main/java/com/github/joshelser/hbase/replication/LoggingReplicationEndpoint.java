@@ -11,7 +11,7 @@ public class LoggingReplicationEndpoint extends HBaseReplicationEndpoint {
   @Override
   public boolean replicate(ReplicateContext replicateContext) {
     LOG.info("replicate() called");
-    replicateContext.getEntries().stream().forEach((e) -> LOG.info("Replacing {} -> {}", e.getKey(), e.getEdit()));
+    replicateContext.getEntries().stream().forEach((e) -> LOG.info("Replicating {} -> {}", e.getKey(), e.getEdit()));
     return true;
   }
 
