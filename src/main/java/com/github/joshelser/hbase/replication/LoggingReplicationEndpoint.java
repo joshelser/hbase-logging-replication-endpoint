@@ -16,15 +16,15 @@ public class LoggingReplicationEndpoint extends HBaseReplicationEndpoint {
   }
 
   @Override
-  public void start() {
+  public void doStart() {
     LOG.info("Starting endpoint");
-    super.start();
+    super.doStart();
   }
 
   @Override
-  public void stop() {
+  public void doStop() {
     LOG.info("Stopping endpoint");
-    super.stop();
+    super.doStop();
   }
 
   @Override
